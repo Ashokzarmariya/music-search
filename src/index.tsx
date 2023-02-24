@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import keycloak from './Config/keycloak';
 import {BrowserRouter} from "react-router-dom";
+import { Provider } from 'react-redux';
+import { store } from './Redux/Store/Store';
 // import keycloak from './keycloak';
 
 // keycloak.init({ onLoad: 'login-required' }).then(() => {
@@ -11,7 +13,10 @@ import {BrowserRouter} from "react-router-dom";
 ReactDOM.render(
     <React.StrictMode>
       < BrowserRouter>
-      <App />
+      <Provider store={store}>
+         <App />
+      </Provider>
+     
       </BrowserRouter>
       
     </React.StrictMode>,
