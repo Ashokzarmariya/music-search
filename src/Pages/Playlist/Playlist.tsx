@@ -1,11 +1,19 @@
 import React from "react";
 import UserPlaylist from "../../Components/UserPlaylist/UserPlaylist";
+import "./Playlist.css";
 
 const Playlist = () => {
   return (
     <div>
+        <div>
+            <h2 className="heading">Create New Playlist</h2>
+
+           <div className="">
+           <i className="createPlaylist fas fa-plus"></i>
+           </div>
+        </div>
       <div>
-        <h1>My Playlist</h1>
+        <h2 className="heading">My Playlist</h2>
       </div>
       <div>
         <UserPlaylist />

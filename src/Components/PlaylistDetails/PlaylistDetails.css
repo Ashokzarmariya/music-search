@@ -1,0 +1,43 @@
+.playlistHeader{
+    background: rgb(79,79,79);
+    color: white;
+    padding: 2rem;
+}
+
+.playlistImage{
+    width: 15rem;
+    height: 15rem;
+    margin-right: 2rem;
+}
+
+.playlistName{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.username{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.playlistHeader{
+    display: flex;
+}
+
+.leftChevron{
+    margin-right: 1rem;
+}
+
+.chevron{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    color: white;
+    background: #121212;
+}

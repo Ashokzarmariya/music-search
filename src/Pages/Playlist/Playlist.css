@@ -1,0 +1,15 @@
+.createPlaylist{
+   
+}
+.heading{
+    margin: 2rem 0px;
+}
+
+.createPlaylist{
+    padding: 2rem;
+    background: #2f2f2f;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}

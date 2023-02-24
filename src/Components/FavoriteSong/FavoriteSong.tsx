@@ -1,7 +1,14 @@
 import React from "react";
 import Song from "../Songs/Song";
-
-const FavoriteSong = () => {
+interface song{
+ title:string,
+  album:string,
+  duration:string
+}
+interface props {
+  data:song[]
+}
+const FavoriteSong = ({data}:props) => {
   return (
     <div>
       <table className="table">
@@ -16,9 +23,9 @@ const FavoriteSong = () => {
           </tr>
         </thead>
         <tbody>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
+          {data.map((item:song,index:number) => (
             <tr>
-              <th scope="row">{item}</th>
+              <th scope="row">{index}</th>
               <td>
                 <Song />
               </td>

@@ -1,0 +1,13 @@
+.searchInput{
+    width: 90%;
+    padding: 5px 0px;
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+
+.searchDiv{
+    margin-top: .5rem;
+}
+.searchHeading{
+    margin-bottom: 2rem;
+}

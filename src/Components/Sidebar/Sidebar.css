@@ -34,3 +34,14 @@ h1,p{
     background-color: rgb(13,110,253);
     color: white;
 }
+
+Link{
+    text-decoration: none;
+
+}
+
+@media (max-width:720px) {
+    .smallDevice{
+        display: none;
+    }
+}
