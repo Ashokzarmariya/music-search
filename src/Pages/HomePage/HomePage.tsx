@@ -18,9 +18,9 @@ const HomePage = () => {
         <div className='right'>
 
             <Routes>
-                {/* <Route path="/home" element={<RightSide/>}></Route>
+                <Route path="/home" element={<RightSide/>}></Route>
                 <Route path="/favorite" element={<Favorite/>}></Route>
-                <Route path="/playlist" element={<Playlist/>}></Route> */}
+                <Route path="/playlist" element={<Playlist/>}></Route>
             </Routes>
             
         </div>
