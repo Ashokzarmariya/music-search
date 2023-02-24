@@ -1,0 +1,36 @@
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    padding: 1rem;
+    height: 99vh;
+    position: sticky;
+    top: 0;
+    
+}
+.menu{
+    font-size: larger;
+    font-weight: 500;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+    border-radius: 3px;
+}
+.menuName{
+    margin-left: 1rem;
+    font-size: larger;
+    font-weight: 500;
+}
+.menuItem:hover{
+    cursor: pointer;
+    
+}
+
+.activeMenu{
+    background-color: rgb(13,110,253);
+    color: white;
+}

@@ -1,0 +1,20 @@
+.playlistCard{
+    width: 10rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+    background-color: rgb(24,24,24);
+    color: white;
+}
+
+.playlistCard:hover{
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+    transition: all .5s ease-in-out;
+    /* transition-duration: 1s; */
+}
+.card-img-top{
+    padding: .5rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+}

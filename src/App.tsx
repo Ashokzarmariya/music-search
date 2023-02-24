@@ -1,22 +1,14 @@
-import { useEffect, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import keycloak from './Config/keycloak';
-import { Demo } from './Components/Demo';
+import { useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import keycloak from "./Config/keycloak";
+import { Demo } from "./Components/Demo";
+import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
- 
-
   return (
-    <div className="App">
-
-
- <h1>Ashok</h1>
-
- {/* <Demo/> */}
-
-
-
+    <div className="">
+      <HomePage />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.homeContainer{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.left{
+    width: 23%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right{
+    width: 75%;
+}
