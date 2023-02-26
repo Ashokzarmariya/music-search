@@ -1,0 +1,6 @@
+.playlistNameInput,.description{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 5px;
+}

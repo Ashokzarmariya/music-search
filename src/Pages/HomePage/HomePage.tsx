@@ -24,7 +24,7 @@ const HomePage = () => {
                 <Route path="/favorites" element={<Favorite/>}></Route>
                 <Route path="/playlists" element={<Playlist/>}></Route>
                 <Route path="/search" element={<Search/>}></Route>
-                <Route path="/playlist/ad" element={<PlaylistDetails/>}></Route>
+                <Route path="/playlist/:title" element={<PlaylistDetails/>}></Route>
             </Routes>
             
         </div>
