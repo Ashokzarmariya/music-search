@@ -3,37 +3,33 @@ import FavoriteSong from "../FavoriteSong/FavoriteSong";
 import "./PlaylistDetails.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { playlist } from "../../Configs/Interfaces";
-import Playlist from "../../Pages/Playlist/Playlist";
 
 const PlaylistDetails = () => {
-    const [playlist, setPlaylist] = useState<playlist[]>([]);
-    const playlists = localStorage.getItem("playlists");
-    const [selectedPlaylist,setSelectedPlaylist]=useState<playlist>();
-    const {title}=useParams();
+  const playlists = localStorage.getItem("playlists");
+  const [selectedPlaylist, setSelectedPlaylist] = useState<playlist>();
+  const { title } = useParams();
 
+  console.log("selected playlist ---- ", selectedPlaylist);
 
-  console.log("selected playlist ---- ",selectedPlaylist)
+  useEffect(() => {
+    if (playlists) {
+      console.log(
+        "local storage playlists------------------ ",
+        JSON.parse(playlists)
+      );
 
-    useEffect(() => {
-      if (playlists) {
-        console.log(
-          "local storage playlists------------------ ",
-          JSON.parse(playlists)
-        );
-        // setPlaylist(JSON.parse(playlists));
-
-        for(let item of JSON.parse(playlists)){
-            if(item.title===title){
-                setSelectedPlaylist(item);
-            }
+      for (let item of JSON.parse(playlists)) {
+        if (item.title === title) {
+          setSelectedPlaylist(item);
         }
       }
-
-    }, [playlists]);
+    }
+  }, [playlists]);
   const navigate = useNavigate();
   const handleNavigate = (value: number) => {
     navigate(value);
   };
+  
   return (
     <div>
       <div className="my-2 d-flex">
@@ -41,7 +37,6 @@ const PlaylistDetails = () => {
           onClick={() => handleNavigate(-1)}
           className="chevron fas fa-chevron-left leftChevron"
         ></i>
-        {/* <i onClick={()=>handleNavigate(1)} className="chevron fas fa-chevron-right"></i> */}
       </div>
 
       <div className="playlistHeader">
@@ -56,15 +51,17 @@ const PlaylistDetails = () => {
           <p className="opacity-25">{selectedPlaylist?.description}</p>
           <p className="mt-2">
             {" "}
-         
-            <span className="username">{selectedPlaylist?.songs?.length} songs</span>{" "}
-            
+            <span className="username">
+              {selectedPlaylist?.songs?.length} songs
+            </span>{" "}
           </p>
         </div>
       </div>
 
       <div className="plsylistSongs mt-5">
-      {selectedPlaylist &&  <FavoriteSong data={selectedPlaylist?.songs} isShow={false}/>}
+        {selectedPlaylist && (
+          <FavoriteSong data={selectedPlaylist?.songs} isShow={false} />
+        )}
       </div>
     </div>
   );

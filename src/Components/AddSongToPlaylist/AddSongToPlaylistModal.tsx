@@ -33,6 +33,7 @@ const AddSongToPlaylistModal = ({ showModal, handleCloseModal,song }: props) => 
       }
     }
     localStorage.setItem("playlists",JSON.stringify(playlist));
+    handleCloseModal();
   };
 
   return (

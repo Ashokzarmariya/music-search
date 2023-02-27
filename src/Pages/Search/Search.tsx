@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
-import { useDispatch } from "react-redux";
-import AddSongToPlaylistModal from "../../Components/AddSongToPlaylist/AddSongToPlaylistModal";
-import FavoriteSong, { song } from "../../Components/FavoriteSong/FavoriteSong";
-// import { debounce } from 'lodash';
 
-import { searchMusicHandler } from "../../Redux/song/Action";
+import FavoriteSong, { song } from "../../Components/FavoriteSong/FavoriteSong";
+
 import "./Search.css";
 
 const Search = () => {
