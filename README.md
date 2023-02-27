@@ -11,6 +11,26 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### Screenshot
+Home Page
+![Screenshot (3)](https://user-images.githubusercontent.com/93376968/221483689-2cfd0d08-4b33-4366-8182-545890fdb7c4.png)
+
+Playlist Detail Page
+![Screenshot (4)](https://user-images.githubusercontent.com/93376968/221483805-6425874b-82a0-4ada-aed7-ec799c12153a.png)
+
+Favorite Song Page
+![Screenshot (5)](https://user-images.githubusercontent.com/93376968/221483941-89158a74-d1a1-4d7b-ba2a-ef0343889866.png)
+
+Playlist Page
+![Screenshot (6)](https://user-images.githubusercontent.com/93376968/221484021-bae8bece-06c5-4ae9-ad4a-5208cbdabdc4.png)
+
+Search Page
+![Screenshot (7)](https://user-images.githubusercontent.com/93376968/221484085-ee94d319-8836-4e0c-a22b-61f1b7021114.png)
+
+
+
+
+
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
