@@ -29,8 +29,8 @@ const Search = () => {
     );
 
     const data = await res.json();
-    setSearchResult(data.tracks.hits);
-    console.log("search result ", data.tracks.hits);
+    setSearchResult(data?.tracks?.hits);
+    console.log("search result ", data);
   };
 
   return (
